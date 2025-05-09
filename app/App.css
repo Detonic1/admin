@@ -1,0 +1,90 @@
+/* Base Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Variables for Theme */
+  :root {
+	--primary-color: #0070f3;
+	--text-color: #333;
+	--bg-color: #f9f9f9;
+	--nav-bg-color: #fff;
+	--footer-bg-color: #333;
+	--footer-text-color: #fff;
+  }
+  
+  /* Overall Page Container */
+  .container {
+	font-family: Arial, sans-serif;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  /* Header Styles */
+  .header {
+	padding: 2rem;
+	background-color: var(--primary-color);
+	text-align: center;
+	color: white;
+  }
+  
+  .title {
+	font-size: 2.5rem;
+	font-weight: bold;
+  }
+  
+  /* Navigation Styles */
+  .nav {
+	background-color: var(--nav-bg-color);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+  }
+  
+  .navList {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 1.5rem;
+  }
+  
+  .navItem {}
+  
+  .navLink {
+	text-decoration: none;
+	color: var(--primary-color);
+	font-size: 1rem;
+	font-weight: bold;
+  }
+  
+  .navLink:hover {
+	text-decoration: underline;
+  }
+  
+  /* Main Content */
+  .main {
+	flex-grow: 1;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .description {
+	font-size: 1.25rem;
+	line-height: 1.6;
+  }
+  
+  /* Footer Styles */
+  .footer {
+	background-color: var(--footer-bg-color);
+	color: var(--footer-text-color);
+	text-align: center;
+	padding: 1rem;
+  }
+  

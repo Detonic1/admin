@@ -1,0 +1,459 @@
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+
+.video {
+  width: 100%;
+  height: calc(100vh - 59.1px); 
+  margin: 0;
+  object-fit: cover;
+}
+
+.welcome {
+  /* background-color: rgba(39, 39, 39, .7); */
+  background-color: rgba(223, 222, 220, 0.885);
+  height: 15%;
+  padding-top: 36px;
+  margin-bottom: 58px;
+  font-size: 23px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  margin-left: 10px;
+  width: 20%;
+}
+ 
+.Goodpart {
+  background-color: rgba(248, 249, 250, 0.9);
+  border: 1px solid #e7e7e7;
+  border-radius: 1px;
+  box-shadow: 5px 5px 5px #eee;
+  padding: 5px;
+  width: 55%;
+  height: 350px;
+  margin-left: 158px;
+  margin-top: 15px;
+}
+
+.Adiv {
+  width: 80%;
+  display: flex;
+  position: relative;
+  height: 50vh;
+  margin: auto;
+}
+
+.Bdiv {
+  margin-top: 1px;
+  background-color: rgba(223, 222, 220, 0.885);
+  width: 75%;
+  display: flex;
+  padding: 2px;
+  position: relative;
+}
+
+.Bdiv1 h1 {
+  flex-direction: column;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 28px;
+  color: rgb(16, 16, 187);
+}
+
+.Bdiv2 {
+  width: 40%;
+  display: flex;
+  line-height: 150%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 110px;
+  margin-top: 10px;
+}
+
+.Cdiv {
+  width: 30%;
+  position: absolute;
+  height: 90%;
+  right: 0px;
+  bottom: 0px;
+  border: 0px;
+  margin-right: 4vh;
+}
+
+.btnA {
+  width: 33%;
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(to right, rgb(155, 29, 29), black);
+  border-radius: 5px;
+  height: 11%;
+  margin-left: 37vh;
+  margin-top: -6vh;
+  color: rgb(132, 138, 143);
+}
+
+.btnA:hover {
+  background: linear-gradient(to right, rgb(220, 100, 100), black); 
+  transform: translateX(5px);
+}
+/* ????????????????????????????? */
+/* video.module.css (or any other CSS file) */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* ????????????????????????????????? */
+
+@media screen and (max-width: 767px) {
+  .Adiv {
+      width: 90%;
+  }
+
+  .Bdiv {
+      width: 90%;
+  }
+
+  .video {
+    width: 100%;
+    height: 900.25vw; /* 16:9 aspect ratio */
+    max-height: calc(100vh - 59.1px); /* Adjust for header height */
+    object-fit: cover;
+}
+}
+
+/* Rest of your CSS code */
+#About {
+  margin-top: 24px;
+  margin-left: 23px;
+}
+
+#years {
+  margin-left: 23px;
+  margin-top: -5vh;
+}
+
+.Baa {
+  margin-top: -26.3vh;
+  margin-left: -46vh;
+  /* width: 65%; */
+}
+
+.Baya {
+  margin-top: -56.8vh;
+  margin-left: 23vh;
+  /* width: 39%; */
+}
+
+.sport {
+  /* width: 47%; */
+  margin-top: -56.1vh;
+  margin-left: 18vh;
+}
+
+.transportation {
+  margin-top: -64.5vh;
+  margin-left: 57vh;
+}
+
+.Career {
+  margin-top: -46.5vh;
+  margin-left: 106vh;
+  /* width: 40%; */
+}
+
+.mango {
+  margin-top: 11vh;
+  margin-left: 9.8vh;
+  transition: transform 0.3s ease;  
+}
+
+.mango:hover {
+  transform: scale(1.1);
+}
+
+.memo {
+  text-align: center;
+  font-size: 1.5em; 
+  font-family: "Chamberi Super Display";
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 40px;
+}
+
+.jenga {
+  margin-top: -67.6vh;
+  margin-left: 57.1vh;
+  transition: transform 0.3s ease;  
+}
+
+.jenga:hover {
+  transform: scale(1.1);
+}
+
+.jeng {
+  margin-top: -68.1vh;
+  margin-left: 104.5vh;
+  transition: transform 0.3s ease;  
+}
+
+.jeng:hover {
+  transform: scale(1.1);
+}
+
+.ideas {
+  margin-top: -68vh;
+  margin-left: 151.9vh;
+  transition: transform 0.3s ease;  
+}
+
+.ideas:hover {
+  transform: scale(1.1);
+}
+
+.RTX {
+  font-size: 20px;
+  transform-origin: bottom center;
+  transform: rotate(-90deg);
+  margin-top: -15vh;
+  margin-left: -178vh;
+  color: white;
+}
+
+.Bounty {
+  font-size: 20px;
+  transform-origin: bottom center;
+  transform: rotate(-90deg);
+  color: white;
+  margin-top: -3vh;
+  margin-left: -82vh;
+}
+
+.cycle {
+  font-size: 20px;
+  transform-origin: bottom center;
+  transform: rotate(-90deg);
+  color: white;
+  margin-top: -1vh;
+  margin-left: 11.9vh;
+}
+
+.tape {
+  font-size: 20px;
+  transform-origin: bottom center;
+  transform: rotate(-90deg);
+  color: white;
+  margin-top: -12vh;
+  margin-left: 106.6vh;
+}
+
+.containers {
+  text-align: center;
+  margin-top: 45vh;
+}
+
+#btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #e50b0b;
+  border: 1px solid rgb(84, 38, 38);
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+}
+
+#btn::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background: rgb(84, 38, 38);
+  transition: height 0.8s, background-color 0.8s;
+  z-index: -1;
+}
+
+#btn:hover::before {
+  height: 0; 
+  background: #fff; 
+}
+
+.experts {
+  font-size: 20px;
+  margin-top: -50vh;
+  margin-left: -145vh; 
+  transform-origin: bottom center;
+  transform: rotate(-360deg);
+  color: #fff;
+}
+
+.excellence {
+  font-size: 18px;
+  margin-top: -16vh;
+  margin-left: 61.2vh; 
+  transform-origin: bottom center;
+  transform: rotate(-360deg);
+  color: #fff;
+}
+
+.forever {
+  font-size: 18px;
+  margin-top: -19vh;
+  margin-left: 108vh; 
+  transform-origin: bottom center;
+  transform: rotate(-360deg);
+  color: #fff;
+}
+
+.premier {
+  font-size: 18px;
+  margin-top: -15vh;
+  margin-left: 156.2vh; 
+  transform-origin: bottom center;
+  transform: rotate(-360deg);
+  color: #fff;
+}
+
+.VALUES {
+  font-size: 20px;
+  margin-top: 10vh;
+  margin-left: -117vh;
+  font-family: "Chamberi Super Display";
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+
+.next {
+  margin-top: 1px;
+  background-color: rgba(223, 222, 220, 0.885);
+  width: 45%;
+  height: 60vh;
+  display: flex;
+  padding: 2px;
+  position: relative;
+  margin-left: 17vh;
+}
+
+.snack {
+  height: 60vh;
+  margin-top: -53vh;
+  margin-left: 110.8vh;
+}
+
+.Embark {
+  font-size: 4vh;
+  margin-top: -53vh;
+  margin-left: 96.8vh;
+  color: #fff;
+  font-weight: bold;
+}
+
+.Grow {
+  font-size: 2.9vh;
+  margin-top: 2vh;
+  margin-left: 96.8vh;
+  color: #fff;
+}         
+
+/* 
+rfjnfebfbfhb 
+*/
+
+.win {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #e50b0b;
+  border: 1px solid rgb(84, 38, 38);
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  z-index: 1; 
+  margin-left: 96vh;
+}
+
+.win::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(84, 38, 38);
+  transition: height 0.8s, background-color 0.8s;
+  z-index: -1;
+}
+
+.win:hover::before {
+  height: 0;
+  background: #fff;
+}
+
+.switch {
+  margin-top: 11vh;
+}
+
+.send {
+  font-size: 20px;
+  margin-top: -49.0vh;
+  margin-left: 30.5vh;
+  font-family: "Chamberi Super Display";
+  font-weight: bold;
+  z-index: -1;
+}
