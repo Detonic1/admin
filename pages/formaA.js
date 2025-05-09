@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/nav.css";
 import "../styles/FormA.css";
 import DashboardLayout from "../component/DashboardLayout";
+import Image from 'next/image';
 
 export default function FormAPage() {
   // Sample applications data - in a real app, this would come from an API
@@ -373,7 +374,7 @@ export default function FormAPage() {
               <div className="form-label">Signature</div>
               <div className="form-value form-value-with-action">
                 <div className="signature-preview">
-                  <img 
+                  <Image  
                     src={`/signatures/${formData.signature}`} 
                     alt={`${formData.userId}'s signature`}
                     className="signature-image"

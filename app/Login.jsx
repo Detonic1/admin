@@ -179,15 +179,16 @@ const Login = ({ onLogin, onSwitch }) => {
         </form>
 
         <div className="text-center mt-6">
-          <p className="text-sm text-gray-600">
-            Don't have an account?{" "}
-            <button
-              className="text-blue-600 hover:text-blue-800 font-medium"
-              onClick={() => onSwitch('signup')}
-            >
-              Sign up now
-            </button>
-          </p>
+<p className="text-sm text-gray-600">
+  Don&apos;t have an account?{" "}
+  <button
+    className="text-blue-600 hover:text-blue-800 font-medium"
+    onClick={() => onSwitch('signup')}
+  >
+    Sign up now
+  </button>
+</p>
+
         </div>
       </div>
     </div>
