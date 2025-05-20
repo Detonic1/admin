@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
+import withAuth from "../../component/WithAuth";
 import "../styles/formA.css"
 
 const forms = () => {
@@ -522,4 +523,4 @@ const forms = () => {
   );
 };
 
-export default forms;
+export default withAuth (forms);

@@ -1,4 +1,5 @@
 import React from "react";
+import withAuth from "../../component/WithAuth";
 
 const dashboard = () => {
   return (
@@ -16,4 +17,4 @@ const dashboard = () => {
   );
 };
 
-export default dashboard;
+export default withAuth(dashboard);

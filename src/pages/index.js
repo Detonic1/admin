@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import withAuth from '../../component/WithAuth'
 
 
 const index = () => {
@@ -12,4 +13,4 @@ const index = () => {
   )
 }
 
-export default index
+export default withAuth (index)

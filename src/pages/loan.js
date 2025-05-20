@@ -11,8 +11,9 @@ import {
   User,
   Filter,
 } from "lucide-react";
+import withAuth from "../../component/WithAuth";
 
-export default function loan() {
+const loan =() =>{
   // Sample data - In a real application, this would come from your API
   const [loans, setLoans] = useState([]);
   const [users, setUsers] = useState([]);
@@ -763,3 +764,4 @@ export default function loan() {
     </div>
   );
 }
+export default withAuth (loan)
