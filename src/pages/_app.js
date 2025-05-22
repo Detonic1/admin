@@ -1,18 +1,23 @@
-
+// src/pages/_app.js
 import "@/styles/globals.css";
-import Sidenav from "../../component/SideNav";
 import { AuthProvider } from "@/context/AuthContext";
+import Sidenav from "../../component/SideNav";
+import { useRouter } from "next/router";
+import withAuth from "../../component/WithAuth";
 
 export default function App({ Component, pageProps }) {
-  return (
-    <div>
-      <Sidenav />
-      <AuthProvider>
+  const router = useRouter();
+  const isPublic = ["/login", "/register"].includes(router.pathname); // Add any public pages here
+  const ProtectedComponent = isPublic ? Component : withAuth(Component);
 
-      <main className="p-4">
-        <Component {...pageProps} />
-      </main>
-      </AuthProvider>
-    </div>
+  return (
+    <AuthProvider>
+      <div className="flex">
+        {!isPublic && <Sidenav />} {/* ✅ Only show nav if not on public page */}
+        <main className="p-4 w-full">
+          <ProtectedComponent {...pageProps} />
+        </main>
+      </div>
+    </AuthProvider>
   );
 }
